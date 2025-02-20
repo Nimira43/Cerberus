@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start:dev": "nodemon src/index.js"
+    "start:dev": "nodemon --env-file=.env.development src/index.js"
   },
   "author": "Nick Rabone",
   "license": "ISC",
