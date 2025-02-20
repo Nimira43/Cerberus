@@ -2,12 +2,11 @@ import express from 'express'
 
 export const startServer = () => {
   const httpServer = express()
-
-  console.log(`Port from ${process.env.PORT}`)
+  const port = process.env.PORT
 
   try {
-    httpServer.listen(3000, () => {
-      console.log(`Server running on Port 3000`)
+    httpServer.listen(port, () => {
+      console.log(`Server running on port ${port}`)
     })
   } catch (err) {
     throw new Error(err)
