@@ -1,5 +1,11 @@
 import express from 'express'
 
 export const startServer = () => {
-  console.log(`Start server function running`)
+  const httpServer = express()
+
+  try {
+
+  } catch (err) {
+    throw new Error(err)
+  }
 }
