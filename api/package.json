@@ -7,7 +7,11 @@
     "start:dev": "nodemon --env-file=.env.development src/index.js",
     "docker:build": "docker build -t cerberus/express-api:latest-dev .",
     "docker:run": "docker run cerberus/express-api:latest-dev",
-    "docker:stop": ""
+    "docker:stop": "docker stop 1612ef",
+    "_comment": "Change the id for the container to stop", 
+    "docker:images": "docker images",
+    "docker:active": "docker ps",
+    "docker:list-all": "docker ps -a"
   },
   "author": "Nick Rabone",
   "license": "ISC",
