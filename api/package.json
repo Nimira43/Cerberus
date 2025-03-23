@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start:dev": "nodemon --env-file=.env.development src/index.js",
-    "docker:build": "docker build -t cerberus/express-api:latest-dev",
-    "docker:run": "",
+    "docker:build": "docker build -t cerberus/express-api:latest-dev .",
+    "docker:run": "docker run cerberus/express-api:latest-dev",
     "docker:stop": ""
   },
   "author": "Nick Rabone",
