@@ -6,6 +6,8 @@ export const startServer = () => {
   const port = config.port
 
   try {
+    console.log(`This message is coming from insode the Cerberus image`)
+
     httpServer.listen(port, () => {
       console.log(`Server running on port ${port}`)
     })
